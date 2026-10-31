@@ -208,10 +208,10 @@
 
   </div>
 
-  <!-- Audio Player: "Aaj Unse Kehna Hai" from Prem Ratan Dhan Payo (Compressed Web Audio) -->
+  <!-- Audio Player: "Aaj Unse Milna Hai" from Prem Ratan Dhan Payo (Starts from 15s) -->
   <audio id="weddingAudio" loop preload="auto">
-    <source src="assets/aaj-unse-kehna-hai.mp3" type="audio/mpeg">
-    <source src="assets/aaj-unse-kehna-hai.m4a" type="audio/mp4">
+    <source src="assets/aaj-unse-milna-hai.mp3" type="audio/mpeg">
+    <source src="assets/aaj-unse-milna-hai.m4a" type="audio/mp4">
   </audio>
 
   <!-- Petals Background Container (Marigold & Mogra & Gold) -->
@@ -1219,7 +1219,7 @@
       });
     }
 
-    // 7. AAJ UNSE KEHNA HAI (PREM RATAN DHAN PAYO) - ROBUST AUDIO PLAYBACK
+    // 7. AAJ UNSE MILNA HAI (PREM RATAN DHAN PAYO - STARTS FROM 15 SECONDS) - ROBUST AUDIO PLAYBACK
     function playWeddingMusic() {
       const audio = document.getElementById('weddingAudio');
       if (!audio) return;
@@ -1266,7 +1266,7 @@
       const cover = document.getElementById('envelopeCover');
       const overlay = document.getElementById('envelopeOverlay');
 
-      // Instantly start playing "Aaj Unse Kehna Hai" on user gesture
+      // Instantly start playing "Aaj Unse Milna Hai" on user gesture
       playWeddingMusic();
 
       // Play 3D door opening video
