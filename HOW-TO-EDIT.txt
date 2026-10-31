@@ -1,0 +1,50 @@
+=============================================================
+ PRANAY & RAGANI WEDDING INVITATION — HOW TO EDIT GUIDE
+=============================================================
+
+This invitation is built as a clean, single-page website.
+No software installation or coding background is required!
+
+-------------------------------------------------------------
+1. HOW TO EDIT TEXT & DETAILS
+-------------------------------------------------------------
+1. Right-click on "index.html" and choose:
+   Open with -> Notepad (or VS Code / any text editor).
+2. Press [ Ctrl + F ] to search for the detail you want to change:
+   
+   * To change Names:
+     Search for: "Pranay Yadav" or "Padmavati"
+   
+   * To change Phone / WhatsApp numbers:
+     Search for: "7013757859" and replace with your phone number.
+   
+   * To change Dates or Timings:
+     Search for: "02 December 2026" or "07:00 PM"
+   
+   * To change Venues or Addresses:
+     Search for: "Manda Yadava Reddy Gardens" or "Satyanarayan Marriage Lawn"
+   
+   * To change Google Maps links:
+     Search for: "https://maps.google.com" or "maps.app.goo.gl" and paste your Google Maps link.
+
+3. Save the file: Press [ Ctrl + S ].
+4. Double-click "index.html" to open in Chrome or Edge and see your updates immediately!
+
+-------------------------------------------------------------
+2. HOW TO CHANGE PHOTOS / MUSIC
+-------------------------------------------------------------
+Open the "assets" folder:
+* To change any ceremony photo:
+  Simply paste your photo with the exact same name (e.g., "event-reception.webp", "hero-card-cover.webp").
+* To change the song:
+  Replace "aaj-se-teri.mp3" with your preferred song (keep the name "aaj-se-teri.mp3").
+
+-------------------------------------------------------------
+3. HOW TO PUBLISH & GET YOUR LIVE LINK (100% FREE)
+-------------------------------------------------------------
+Once you are happy with the details:
+1. Open your browser and go to: https://app.netlify.com/drop
+2. Drag and drop the entire "Groom-Wedding-Invitation-Hub" folder onto that webpage.
+3. Within 15 seconds, Netlify will generate a free live link (e.g., https://pranay-ragani-wedding.netlify.app).
+4. Share that link with all your relatives and guests on WhatsApp!
+=============================================================
