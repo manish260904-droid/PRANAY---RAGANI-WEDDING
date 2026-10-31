@@ -208,10 +208,10 @@
 
   </div>
 
-  <!-- Audio Player: "Aaj Unse Milna Hai" from Prem Ratan Dhan Payo (Starts from 15s) -->
+  <!-- Audio Player: "Aaj Se Teri" by Arijit Singh (High-Speed Compressed) -->
   <audio id="weddingAudio" loop preload="auto">
-    <source src="assets/aaj-unse-milna-hai.mp3" type="audio/mpeg">
-    <source src="assets/aaj-unse-milna-hai.m4a" type="audio/mp4">
+    <source src="assets/aaj-se-teri.mp3" type="audio/mpeg">
+    <source src="assets/aaj-se-teri.m4a" type="audio/mp4">
   </audio>
 
   <!-- Petals Background Container (Marigold & Mogra & Gold) -->
@@ -1009,8 +1009,9 @@
   </footer>
 
   <!-- FLOATING MUSIC TOGGLE BUTTON -->
-  <button id="musicToggleBtn" onclick="toggleMusic()" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-gradient-to-br from-[#071126] via-[#0A1931] to-[#13274F] border-2 border-gold text-gold shadow-[0_4px_20px_rgba(7,17,38,0.5)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all" title="Toggle Wedding Music">
-    <span id="musicIcon" class="text-lg">🎵</span>
+  <button id="musicToggleBtn" onclick="toggleMusic(event)" class="fixed bottom-6 right-6 z-40 px-3.5 py-2.5 rounded-full bg-gradient-to-br from-[#071126] via-[#0A1931] to-[#13274F] border-2 border-gold text-gold shadow-[0_6px_25px_rgba(7,17,38,0.6)] flex items-center gap-2 hover:scale-105 active:scale-95 transition-all select-none backdrop-blur-md" title="Mute / Unmute Wedding Music">
+    <span id="musicIcon" class="text-base sm:text-lg">🎵</span>
+    <span id="musicText" class="text-xs font-bold uppercase tracking-wider text-gold-light hidden sm:inline">Music</span>
   </button>
 
 
@@ -1020,6 +1021,7 @@
     let currentFilter = 'all';
     let isMusicPlaying = false;
     let hasDoorOpened = false;
+    let userMuted = false;
 
     // TARGET DATES
     const HALDI_TIMESTAMP = new Date('2026-11-20T16:00:00+05:30').getTime();
@@ -1226,25 +1228,55 @@
       }
     }
 
-    function toggleMusic() {
+    function toggleMusic(e) {
+      if (e) {
+        e.stopPropagation();
+        e.preventDefault();
+      }
       const audio = document.getElementById('weddingAudio');
       if (!audio) return;
-      if (audio.paused) {
-        audio.play().then(() => {
-          isMusicPlaying = true;
-          updateMusicButtonIcon();
-        }).catch(() => {});
-      } else {
+
+      if (!audio.paused && !audio.muted) {
+        // Explicitly Mute / Pause
         audio.pause();
+        audio.muted = true;
+        userMuted = true;
         isMusicPlaying = false;
-        updateMusicButtonIcon();
+      } else {
+        // Explicitly Play / Unmute
+        userMuted = false;
+        audio.muted = false;
+        audio.volume = 0.85;
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            isMusicPlaying = true;
+            updateMusicButtonIcon();
+          }).catch(err => console.log('Audio resume notice:', err));
+        }
       }
+      updateMusicButtonIcon();
     }
 
     function updateMusicButtonIcon() {
       const icon = document.getElementById('musicIcon');
-      if (icon) {
-        icon.textContent = isMusicPlaying ? '🔊' : '🔈';
+      const text = document.getElementById('musicText');
+      const btn = document.getElementById('musicToggleBtn');
+      if (!icon) return;
+      if (isMusicPlaying) {
+        icon.textContent = '🔊';
+        if (text) text.textContent = 'Music On';
+        if (btn) {
+          btn.setAttribute('title', 'Mute Music');
+          btn.classList.add('ring-2', 'ring-gold/60');
+        }
+      } else {
+        icon.textContent = '🔇';
+        if (text) text.textContent = 'Music Off';
+        if (btn) {
+          btn.setAttribute('title', 'Play Music');
+          btn.classList.remove('ring-2', 'ring-gold/60');
+        }
       }
     }
 
@@ -1257,7 +1289,7 @@
       const cover = document.getElementById('envelopeCover');
       const overlay = document.getElementById('envelopeOverlay');
 
-      // Instantly start playing "Aaj Unse Milna Hai" on user gesture
+      // Instantly start playing "Aaj Se Teri" on user gesture
       playWeddingMusic();
 
       // Play 3D door opening video
@@ -1292,7 +1324,11 @@
 
     // Global listener: ensure audio starts if clicked anywhere on the page
     ['click', 'touchstart'].forEach(evtType => {
-      window.addEventListener(evtType, () => {
+      window.addEventListener(evtType, (e) => {
+        // If user tapped on the music toggle button itself, do not handle here
+        if (e && e.target && e.target.closest('#musicToggleBtn')) return;
+        if (userMuted) return; // NEVER override user's intentional mute action!
+
         const audio = document.getElementById('weddingAudio');
         if (audio && audio.paused && hasDoorOpened) {
           audio.volume = 0.85;
