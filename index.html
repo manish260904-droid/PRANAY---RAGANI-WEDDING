@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Gondra Pranay Chandra Yadav & Ragani Yadav | Wedding & Reception Invitation</title>
-  <meta name="description" content="Wedding celebration invitation of Gondra Pranay Chandra Yadav (S/o Shri Gondra Naresh Yadav & Smt. Padmavati) with Ragani Yadav. Hyderabad & Pratapgarh celebrations." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Royal Wedding Invitation | Gondra Pranay Chandra Yadav &amp; Ragani Yadav</title>
   
-  <!-- Open Graph / WhatsApp / Facebook Link Previews -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Gondra Pranay Chandra Yadav & Ragani Yadav | Wedding Invitation" />
-  <meta property="og:description" content="Together with their families, Shri Gondra Naresh Yadav & Smt. Padmavati cordially invite you to celebrate the wedding celebrations of their son Gondra Pranay Chandra Yadav with Ragani Yadav. Tap to open invitation." />
-  <meta property="og:image" content="assets/hero-card-cover.webp" />
+  <meta name="description" content="Royal Wedding Celebrations of Gondra Pranay Chandra Yadav and Ragani Yadav across Hyderabad, Telangana &amp; Pratapgarh, Uttar Pradesh.">
+  <meta property="og:title" content="Royal Wedding Invitation | Pranay &amp; Ragani">
+  <meta property="og:description" content="Join us in celebrating the sacred union of Gondra Pranay Chandra Yadav &amp; Ragani Yadav (20 Nov - 02 Dec 2026).">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-card-cover.webp">
+  <meta name="theme-color" content="#071126">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Gondra Pranay Chandra Yadav & Ragani Yadav | Wedding Invitation" />
-  <meta name="twitter:description" content="Together with their families, the Gondra family cordially invites you to celebrate the wedding & reception of Pranay & Ragani." />
-  <meta name="twitter:image" content="assets/hero-card-cover.webp" />
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪷</text></svg>" />
-  
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Cormorant Garamond, Cinzel, Plus Jakarta Sans, Dancing Script -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -34,26 +28,31 @@
         extend: {
           colors: {
             royal: {
-              red: '#700B13',
-              maroon: '#4A080E',
-              crimson: '#8B0000',
-              deep: '#2A0407',
+              midnight: '#071126',
+              navy: '#0A1931',
+              sapphire: '#13274F',
+              steel: '#1E3E62',
+              deep: '#040B17',
+              accent: '#183863',
             },
             gold: {
               light: '#FDE68A',
               DEFAULT: '#D4AF37',
-              rich: '#B45309',
-              antique: '#C5A059',
-              dark: '#92400E',
+              rich: '#C5A059',
+              antique: '#AA771C',
+              champagne: '#F7E7CE',
+              dark: '#855806',
             },
             silk: {
               ivory: '#FDFBF7',
-              cream: '#FAF4EB',
-              sand: '#F3E8D8',
+              cream: '#F4F7FB',
+              pearl: '#EBF1F8',
+              sand: '#E2E8F0',
             },
             emerald: {
-              deep: '#143525',
-              soft: '#2D6A4F',
+              deep: '#0D3B2E',
+              soft: '#1B6A50',
+              rich: '#14532D',
             }
           },
           fontFamily: {
@@ -69,8 +68,8 @@
 
   <style>
     body {
-      background-color: #FAF4EB;
-      color: #2D1810;
+      background-color: #F4F7FB;
+      color: #0F172A;
       overflow-x: hidden;
       -webkit-font-smoothing: antialiased;
     }
@@ -81,27 +80,33 @@
       -webkit-text-fill-color: transparent;
     }
 
-    /* Falling Petals Animation */
+    .navy-gold-card {
+      background: linear-gradient(145deg, #071126 0%, #0A1931 60%, #13274F 100%);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      box-shadow: 0 10px 30px -5px rgba(7, 17, 38, 0.4);
+    }
+
+    /* Falling Petals Animation (Marigold, Mogra & Gold Flakes) */
     @keyframes fall {
       0% {
         transform: translate3d(0, -50px, 0) rotate(0deg);
         opacity: 0;
       }
       10% {
-        opacity: 0.8;
+        opacity: 0.85;
       }
       90% {
-        opacity: 0.8;
+        opacity: 0.85;
       }
       100% {
-        transform: translate3d(60px, 105vh, 0) rotate(360deg);
+        transform: translate3d(70px, 105vh, 0) rotate(360deg);
         opacity: 0;
       }
     }
 
     @keyframes sway {
       0%, 100% { transform: translateX(0); }
-      50% { transform: translateX(25px); }
+      50% { transform: translateX(30px); }
     }
 
     .petal {
@@ -117,17 +122,18 @@
 
     /* Tab switcher */
     .tab-active {
-      background: linear-gradient(135deg, #700B13 0%, #8E1520 100%);
-      color: #FDFBF7;
-      box-shadow: 0 4px 14px rgba(112, 11, 19, 0.35);
+      background: linear-gradient(135deg, #071126 0%, #0A1931 50%, #13274F 100%);
+      color: #FDE68A;
+      border: 1px solid rgba(212, 175, 55, 0.55);
+      box-shadow: 0 4px 14px rgba(7, 17, 38, 0.45);
     }
     .tab-inactive {
       background: #FFFFFF;
-      color: #700B13;
-      border: 1px solid #E6D5C3;
+      color: #0A1931;
+      border: 1px solid #CBD5E1;
     }
     .tab-inactive:hover {
-      background: #FDF6ED;
+      background: #EDF2F9;
     }
 
     /* Pulse animation for door seal */
@@ -144,7 +150,7 @@
       width: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: #FAF4EB;
+      background: #071126;
     }
     ::-webkit-scrollbar-thumb {
       background: #C5A059;
@@ -152,48 +158,48 @@
     }
   </style>
 </head>
-<body class="font-sans text-[#331C13] selection:bg-gold-light selection:text-royal-red">
+<body class="font-sans text-[#0F172A] selection:bg-gold-light selection:text-royal-navy">
 
   <!-- ======================================================== -->
   <!-- ROYAL ENVELOPE / DOOR OPENING ANIMATION OVERLAY -->
   <!-- ======================================================== -->
-  <div id="envelopeOverlay" class="fixed inset-0 z-[100] bg-black flex flex-col items-center justify-center overflow-hidden select-none transition-opacity duration-700">
+  <div id="envelopeOverlay" class="fixed inset-0 z-[100] bg-[#071126] flex flex-col items-center justify-center overflow-hidden select-none transition-opacity duration-700">
     
-    <!-- 3D Opening Video Element -->
+    <!-- 3D Opening Video Element with subtle sapphire blend -->
     <video id="envelopeVideo" playsinline webkit-playsinline muted preload="auto" class="absolute inset-0 w-full h-full object-cover object-top opacity-0 transition-opacity duration-700 pointer-events-none">
       <source src="assets/hero-video.mp4" type="video/mp4">
     </video>
 
-    <!-- Still Card Cover (Before Tap) -->
+    <!-- Still Card Cover (Before Tap) - Imperial Midnight Navy & Gold -->
     <div id="envelopeCover" onclick="triggerDoorOpen()" class="absolute inset-0 w-full h-full z-20 cursor-pointer flex flex-col items-center justify-center transition-all duration-700 group">
-      <!-- Background Cover Artwork -->
-      <img src="assets/hero-card-cover.webp" alt="Wedding Invitation Card" class="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.85] transition-transform duration-1000 group-hover:scale-105">
+      <!-- Background Cover Artwork (Imperial Midnight Navy & 24K Gold Filigree) -->
+      <img src="assets/hero-card-cover.webp" alt="Royal Wedding Invitation Card - Groom's Edition" class="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.92] transition-transform duration-1000 group-hover:scale-105">
       
       <!-- Vignette Overlay -->
-      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/75"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#071126]/90 via-[#0A1931]/35 to-[#071126]/85"></div>
 
       <!-- Center Ornate Golden Wax Seal Prompt -->
       <div class="relative z-30 flex flex-col items-center px-6 text-center max-w-sm animate-pulse-gentle">
         
         <!-- Sacred Inscription in English -->
-        <span class="text-xs uppercase tracking-[0.3em] text-gold-light font-bold mb-3 drop-shadow-md">
+        <span class="text-xs uppercase tracking-[0.3em] text-gold-light font-bold mb-3 drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
           || Shree Ganeshaya Namah ||
         </span>
 
-        <!-- Wax Seal Embellishment (Groom's Side Initials: P ✦ R) -->
-        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#FFE082] via-[#D4AF37] to-[#B45309] p-1 shadow-[0_0_45px_rgba(212,175,55,0.75)] group-hover:scale-110 transition-transform duration-500 mb-4 flex items-center justify-center">
-          <div class="w-full h-full rounded-full border-2 border-white/40 flex flex-col items-center justify-center bg-[#520F16]">
-            <span class="text-2xl sm:text-3xl">🪷</span>
+        <!-- Wax Seal Embellishment (Groom's Imperial Sapphire Crest: P ✦ R) -->
+        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-br from-[#FFE082] via-[#D4AF37] to-[#AA771C] p-1 shadow-[0_0_50px_rgba(212,175,55,0.85)] group-hover:scale-110 transition-transform duration-500 mb-4 flex items-center justify-center">
+          <div class="w-full h-full rounded-full border-2 border-white/50 flex flex-col items-center justify-center bg-gradient-to-b from-[#0F2557] via-[#0A1931] to-[#040B17] shadow-inner">
+            <span class="text-2xl sm:text-3xl">👑</span>
             <span class="font-royal text-gold text-xs font-black tracking-widest mt-1">P ✦ R</span>
           </div>
         </div>
 
         <!-- Tap to Open Button Pill -->
-        <div class="px-6 py-3 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-royal-deep font-bold text-xs sm:text-sm tracking-widest uppercase shadow-[0_4px_30px_rgba(212,175,55,0.6)] border border-white/50 group-hover:shadow-[0_4px_40px_rgba(212,175,55,0.9)] transition-all">
+        <div class="px-7 py-3 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-royal-midnight font-bold text-xs sm:text-sm tracking-widest uppercase shadow-[0_4px_30px_rgba(212,175,55,0.7)] border border-white/60 group-hover:shadow-[0_4px_45px_rgba(212,175,55,0.95)] transition-all">
           <span>TAP TO OPEN INVITATION</span>
         </div>
 
-        <p class="text-xs text-silk-cream/90 mt-3 font-medium tracking-wider flex items-center gap-1.5">
+        <p class="text-xs text-silk-cream/95 mt-3 font-medium tracking-wider flex items-center gap-1.5 drop-shadow">
           <span>👆</span> <span>Click anywhere to open</span>
         </p>
 
@@ -208,60 +214,68 @@
     <source src="assets/aaj-unse-kehna-hai.m4a" type="audio/mp4">
   </audio>
 
-  <!-- Petals Background Container -->
+  <!-- Petals Background Container (Marigold & Mogra & Gold) -->
   <div id="petalContainer" class="fixed inset-0 pointer-events-none z-30 overflow-hidden"></div>
 
-  <!-- FLOATING TOP BAR -->
-  <header class="fixed top-0 inset-x-0 z-50 bg-[#FAF4EB]/90 backdrop-blur-md border-b border-[#EADCC9]/80 transition-all duration-300">
-    <div class="max-w-5xl mx-auto px-4 py-2.5 flex items-center justify-center sm:justify-start">
+  <!-- FLOATING TOP BAR (Imperial Midnight Navy & Gold) -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-[#071126]/95 backdrop-blur-md border-b border-gold/30 transition-all duration-300 shadow-md">
+    <div class="max-w-5xl mx-auto px-4 py-2.5 flex items-center justify-between sm:justify-start">
       
       <!-- Brand: Pranay & Ragani -->
       <a href="#hero" class="flex items-center gap-2 group">
-        <span class="text-xl">🪷</span>
-        <span class="font-royal text-sm sm:text-base tracking-[0.2em] text-royal-red uppercase font-bold">Pranay &amp; Ragani</span>
+        <span class="text-xl">👑</span>
+        <span class="font-royal text-sm sm:text-base tracking-[0.2em] text-gold-light uppercase font-bold drop-shadow">Pranay &amp; Ragani</span>
       </a>
+
+      <!-- Groom's Royal Tag -->
+      <span class="text-[10px] tracking-widest uppercase font-semibold text-gold-light/90 border border-gold/40 px-3 py-0.5 rounded-full ml-auto hidden sm:inline-block bg-royal-navy/70">
+        Groom's Royal Celebrations
+      </span>
 
     </div>
   </header>
 
   <!-- HERO SECTION: Video Overlay + Grand Invitation Reveal -->
-  <section id="hero" class="relative min-h-[92vh] sm:min-h-screen pt-16 flex items-center justify-center bg-black overflow-hidden select-none">
+  <section id="hero" class="relative min-h-[92vh] sm:min-h-screen pt-16 flex items-center justify-center bg-[#071126] overflow-hidden select-none">
     
     <!-- Background Video / Poster -->
-    <video id="heroVideo" autoplay loop muted playsinline poster="assets/hero-card-cover.webp" class="absolute inset-0 w-full h-full object-cover object-center opacity-70 filter brightness-[0.78]">
+    <video id="heroVideo" autoplay loop muted playsinline poster="assets/hero-card-cover.webp" class="absolute inset-0 w-full h-full object-cover object-center opacity-65 filter brightness-[0.75]">
       <source src="assets/hero-video.mp4" type="video/mp4">
     </video>
 
-    <!-- Dark Gradient Overlays for Readability -->
-    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/45 to-black/60 pointer-events-none"></div>
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)] pointer-events-none"></div>
+    <!-- Dark Navy Gradient Overlays for Readability -->
+    <div class="absolute inset-0 bg-gradient-to-t from-[#071126] via-[#071126]/60 to-[#071126]/75 pointer-events-none"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(7,17,38,0.7)_100%)] pointer-events-none"></div>
 
     <!-- Hero Content -->
     <div class="relative z-20 max-w-4xl mx-auto px-4 py-12 text-center flex flex-col items-center">
       
       <!-- Sacred Inscription -->
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-black/40 border border-gold/40 backdrop-blur-sm mb-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0A1931]/80 border border-gold/50 backdrop-blur-sm mb-6 shadow-md">
         <span class="text-gold text-sm">✦</span>
         <span class="text-xs uppercase tracking-[0.25em] text-gold-light font-medium">Shree Ganeshaya Namah</span>
         <span class="text-gold text-sm">✦</span>
       </div>
 
       <!-- Main Invocation Heading (Groom's Family Host) -->
-      <p class="font-serif italic text-base sm:text-xl text-silk-cream/90 mb-3">
+      <p class="font-serif italic text-base sm:text-xl text-silk-cream/95 mb-3">
         Together with our family, we cordially invite you to celebrate the wedding celebrations of our beloved son
       </p>
 
-      <!-- Couple Names with Royal Styling (Groom First) -->
+      <!-- Couple Names with Imperial Styling (Groom First) -->
       <div class="my-4 flex flex-col items-center">
         
         <!-- Groom -->
-        <h1 class="font-serif text-3xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)] leading-tight">
+        <h1 class="font-serif text-3xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.95)] leading-tight">
           Gondra Pranay Chandra Yadav
         </h1>
         
-        <p class="text-xs sm:text-sm text-gold-light/95 font-medium tracking-widest uppercase mt-1">
-          S/o Shri Gondra Naresh Yadav &amp; Smt. Padmavati
-        </p>
+        <!-- Groom Lineage Badge -->
+        <div class="mt-2 inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold/15 border border-gold/40 backdrop-blur-sm">
+          <span class="text-[11px] sm:text-xs text-gold-light font-semibold tracking-widest uppercase">
+            👑 The Groom · S/o Shri Gondra Naresh Yadav &amp; Smt. Padmavati
+          </span>
+        </div>
 
         <!-- Royal Connector Line -->
         <div class="my-3 sm:my-4 flex items-center justify-center gap-4 w-full max-w-xs">
@@ -271,7 +285,7 @@
         </div>
 
         <!-- Bride -->
-        <h1 class="font-serif text-3xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)] leading-tight">
+        <h1 class="font-serif text-3xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white/95 drop-shadow-[0_4px_24px_rgba(0,0,0,0.95)] leading-tight">
           Ragani Yadav
         </h1>
         
@@ -283,12 +297,12 @@
 
       <!-- Dual-City Subtitle Badge (Hyderabad Highlighted First for Groom's guests) -->
       <div class="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
-        <span class="px-3.5 py-1.5 rounded-full bg-emerald-deep/90 text-silk-ivory border border-gold/40 backdrop-blur-sm flex items-center gap-1.5 shadow-md">
+        <span class="px-3.5 py-1.5 rounded-full bg-royal-navy/95 text-gold-light border border-gold/50 backdrop-blur-sm flex items-center gap-1.5 shadow-md">
           <span>👑</span>
           <span>Hyderabad Celebrations · 20 Nov - 02 Dec</span>
         </span>
         <span class="text-gold font-bold">✦</span>
-        <span class="px-3.5 py-1.5 rounded-full bg-royal-red/80 text-silk-ivory border border-gold/40 backdrop-blur-sm flex items-center gap-1.5">
+        <span class="px-3.5 py-1.5 rounded-full bg-emerald-deep/90 text-silk-ivory border border-gold/40 backdrop-blur-sm flex items-center gap-1.5 shadow-md">
           <span>📍</span>
           <span>Pratapgarh Wedding · 25-26 Nov</span>
         </span>
@@ -296,11 +310,11 @@
 
       <!-- Scroll to Hub CTA Buttons -->
       <div class="mt-8 flex flex-col sm:flex-row items-center gap-3">
-        <a href="#hubSection" class="px-7 py-3 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-royal-deep font-bold text-sm tracking-wider uppercase shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:scale-105 active:scale-95 transition-all">
+        <a href="#hubSection" class="px-7 py-3 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-royal-midnight font-bold text-sm tracking-wider uppercase shadow-[0_4px_25px_rgba(212,175,55,0.5)] hover:scale-105 active:scale-95 transition-all">
           <span>View Celebration Itinerary</span>
           <span class="ml-1.5">↓</span>
         </a>
-        <a href="#wishesSection" class="px-5 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-medium text-xs tracking-wider uppercase backdrop-blur-sm border border-white/30 transition-all">
+        <a href="#wishesSection" class="px-5 py-3 rounded-full bg-[#13274F]/80 hover:bg-[#1E3E62] text-white font-medium text-xs tracking-wider uppercase backdrop-blur-sm border border-gold/40 transition-all shadow-md">
           <span>Send Blessings via WhatsApp</span>
           <span class="ml-1">💌</span>
         </a>
@@ -310,14 +324,14 @@
 
     <!-- Scroll Down Hint -->
     <div class="absolute bottom-4 inset-x-0 flex justify-center pointer-events-none animate-bounce">
-      <span class="text-gold/80 text-lg">⌄</span>
+      <span class="text-gold/90 text-xl font-bold">⌄</span>
     </div>
   </section>
 
 
   <!-- DUAL-DESTINATION SELECTOR -->
   <section id="hubSection" class="relative z-30 -mt-6 sm:-mt-8 max-w-4xl mx-auto px-4">
-    <div class="bg-white rounded-3xl p-3 sm:p-4 shadow-[0_12px_40px_rgba(45,24,16,0.12)] border border-[#E8DACB]">
+    <div class="bg-white rounded-3xl p-3 sm:p-4 shadow-[0_12px_40px_rgba(7,17,38,0.1)] border border-[#CBD5E1]">
       
       <!-- Sub-header -->
       <div class="text-center mb-3">
@@ -327,40 +341,40 @@
       </div>
 
       <!-- 3-Way City Selector Tabs -->
-      <div class="grid grid-cols-3 gap-1.5 sm:gap-2 p-1.5 bg-[#FAF4EB] rounded-2xl border border-[#E8DACB]">
+      <div class="grid grid-cols-3 gap-1.5 sm:gap-2 p-1.5 bg-[#F4F7FB] rounded-2xl border border-[#CBD5E1]">
         
         <!-- Tab 1: All Celebrations -->
         <button onclick="setCityFilter('all')" id="tabAll" class="tab-btn tab-active py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-0.5">
           <span class="text-sm sm:text-base">✨</span>
           <span class="leading-tight text-center">All Celebrations</span>
-          <span class="text-[10px] opacity-75 hidden sm:inline">5 Ceremonies</span>
+          <span class="text-[10px] opacity-80 hidden sm:inline">5 Ceremonies</span>
         </button>
 
         <!-- Tab 2: Hyderabad Leg -->
         <button onclick="setCityFilter('hyderabad')" id="tabHyderabad" class="tab-btn tab-inactive py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-0.5">
           <span class="text-sm sm:text-base">👑</span>
           <span class="leading-tight text-center">Hyderabad Leg</span>
-          <span class="text-[10px] opacity-75 hidden sm:inline">4 Celebrations</span>
+          <span class="text-[10px] opacity-80 hidden sm:inline">4 Celebrations</span>
         </button>
 
         <!-- Tab 3: Pratapgarh Leg -->
         <button onclick="setCityFilter('pratapgarh')" id="tabPratapgarh" class="tab-btn tab-inactive py-2.5 sm:py-3 px-2 sm:px-4 rounded-xl text-xs sm:text-sm font-semibold transition-all flex flex-col items-center justify-center gap-0.5">
           <span class="text-sm sm:text-base">📍</span>
           <span class="leading-tight text-center">Pratapgarh Wedding</span>
-          <span class="text-[10px] opacity-75 hidden sm:inline">25 - 26 Nov 2026</span>
+          <span class="text-[10px] opacity-80 hidden sm:inline">25 - 26 Nov 2026</span>
         </button>
 
       </div>
 
       <!-- Quick Context Bar below Tabs -->
-      <div id="filterBanner" class="mt-3 px-3 py-2 rounded-xl bg-[#FDFBF7] border border-[#EADCC9] flex items-center justify-between text-xs text-[#70422E]">
+      <div id="filterBanner" class="mt-3 px-3.5 py-2.5 rounded-xl bg-[#F8FAFC] border border-[#CBD5E1] flex items-center justify-between text-xs text-[#1E293B]">
         <div class="flex items-center gap-2">
           <span id="filterIcon" class="text-base">🗺️</span>
           <span id="filterText" class="font-medium">
             Showing all 5 wedding celebrations across Hyderabad and Pratapgarh.
           </span>
         </div>
-        <span id="filterCount" class="font-bold text-royal-red shrink-0 ml-2">5 Events</span>
+        <span id="filterCount" class="font-bold text-royal-navy bg-gold/25 px-2.5 py-0.5 rounded-full border border-gold/40 shrink-0 ml-2">5 Events</span>
       </div>
 
     </div>
@@ -369,51 +383,51 @@
 
   <!-- DUAL COUNTDOWN TIMER -->
   <section class="max-w-4xl mx-auto px-4 py-10">
-    <div class="bg-gradient-to-br from-[#FFFBF5] via-[#FAF4EB] to-[#F5ECE0] rounded-3xl p-6 sm:p-8 border border-gold/30 shadow-sm text-center relative overflow-hidden">
+    <div class="bg-gradient-to-br from-[#FFFFFF] via-[#F8FAFC] to-[#EDF2F9] rounded-3xl p-6 sm:p-8 border border-gold/30 shadow-md text-center relative overflow-hidden">
       
-      <div class="text-2xl mb-1 text-gold">🪷</div>
+      <div class="text-2xl mb-1 text-gold">👑</div>
 
-      <h2 id="countdownTitle" class="font-serif text-2xl sm:text-3xl text-royal-red font-bold">
+      <h2 id="countdownTitle" class="font-serif text-2xl sm:text-3xl text-royal-navy font-bold">
         Counting Down to the Wedding Celebrations
       </h2>
 
-      <p id="countdownSub" class="text-xs uppercase tracking-[0.2em] text-[#8C5E4A] font-medium mt-1 mb-6">
+      <p id="countdownSub" class="text-xs uppercase tracking-[0.2em] text-[#475569] font-medium mt-1 mb-6">
         20 November 2026 · Karmanghat, Hyderabad
       </p>
 
-      <!-- 4 Counters -->
+      <!-- 4 Counters (Imperial Midnight Navy Counter Boxes with Gold Numbers) -->
       <div class="grid grid-cols-4 gap-2 sm:gap-4 max-w-md mx-auto">
         
         <!-- Days -->
         <div class="flex flex-col items-center">
-          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
-            <span id="countDays" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-gradient-to-b from-[#071126] to-[#0A1931] shadow-md border border-gold/40 flex items-center justify-center">
+            <span id="countDays" class="font-serif text-2xl sm:text-4xl font-bold text-gold-light">00</span>
           </div>
-          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Days</span>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-royal-navy mt-2">Days</span>
         </div>
 
         <!-- Hours -->
         <div class="flex flex-col items-center">
-          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
-            <span id="countHours" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-gradient-to-b from-[#071126] to-[#0A1931] shadow-md border border-gold/40 flex items-center justify-center">
+            <span id="countHours" class="font-serif text-2xl sm:text-4xl font-bold text-gold-light">00</span>
           </div>
-          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Hours</span>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-royal-navy mt-2">Hours</span>
         </div>
 
         <!-- Minutes -->
         <div class="flex flex-col items-center">
-          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
-            <span id="countMins" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-gradient-to-b from-[#071126] to-[#0A1931] shadow-md border border-gold/40 flex items-center justify-center">
+            <span id="countMins" class="font-serif text-2xl sm:text-4xl font-bold text-gold-light">00</span>
           </div>
-          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Minutes</span>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-royal-navy mt-2">Minutes</span>
         </div>
 
         <!-- Seconds -->
         <div class="flex flex-col items-center">
-          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-white shadow-sm border border-gold/30 flex items-center justify-center">
-            <span id="countSecs" class="font-serif text-2xl sm:text-4xl font-bold text-royal-red">00</span>
+          <div class="w-full aspect-square max-w-[80px] rounded-2xl bg-gradient-to-b from-[#071126] to-[#0A1931] shadow-md border border-gold/40 flex items-center justify-center">
+            <span id="countSecs" class="font-serif text-2xl sm:text-4xl font-bold text-gold-light">00</span>
           </div>
-          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-[#7C4A32] mt-2">Seconds</span>
+          <span class="text-[11px] sm:text-xs font-semibold uppercase tracking-wider text-royal-navy mt-2">Seconds</span>
         </div>
 
       </div>
@@ -424,13 +438,13 @@
 
   <!-- FAMILY INTRODUCTION & PEDIGREE -->
   <section class="max-w-4xl mx-auto px-4 py-8">
-    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-[#EADBCC] text-center">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-[#CBD5E1] text-center">
       
       <!-- Header -->
       <span class="text-xs uppercase tracking-[0.25em] text-gold-rich font-bold block mb-2">
         With Sincere Blessings
       </span>
-      <h2 class="font-serif text-3xl sm:text-4xl text-royal-red font-bold mb-3">
+      <h2 class="font-serif text-3xl sm:text-4xl text-royal-navy font-bold mb-3">
         Two Families United in Celebration
       </h2>
       <div class="w-16 h-0.5 bg-gold mx-auto mb-8"></div>
@@ -439,49 +453,49 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 text-left">
         
         <!-- Groom's Family Card (Hyderabad) -->
-        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] relative overflow-hidden">
-          <div class="absolute top-0 right-0 bg-emerald-deep text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
-            Groom's Family · Hyderabad
+        <div class="p-6 rounded-2xl bg-gradient-to-br from-[#FFFFFF] to-[#F1F5F9] border-2 border-gold/45 shadow-sm relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gradient-to-r from-[#071126] to-[#13274F] text-gold-light text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider border-b border-l border-gold/40">
+            👑 Groom's Family · Hyderabad
           </div>
 
-          <h3 class="font-serif text-2xl font-bold text-royal-red mb-1">
-            Gondra Pranay Chandra Yadav
+          <h3 class="font-serif text-2xl font-bold text-royal-navy mb-1 flex items-center gap-2">
+            <span>Gondra Pranay Chandra Yadav</span>
           </h3>
-          <p class="text-sm font-semibold text-[#8A4B2B] mb-3">
+          <p class="text-sm font-semibold text-[#1E3E62] mb-3">
             Son of Shri Gondra Naresh Yadav &amp; Smt. Padmavati
           </p>
 
-          <div class="space-y-1.5 text-xs text-[#6B4431] pt-3 border-t border-[#EFE2D3]">
-            <p><strong class="text-[#4A2616]">Residence:</strong> <span>Gondra's Residence, Karmanghat, Hyderabad, Telangana</span></p>
-            <p><strong class="text-[#4A2616]">Grand Reception:</strong> <span>Mandha Yadava Reddy Gardens, Champapet, Hyderabad</span></p>
-            <p><strong class="text-[#4A2616]">RSVP Contact:</strong> <span>+91 70137 57859</span></p>
+          <div class="space-y-1.5 text-xs text-[#334155] pt-3 border-t border-[#E2E8F0]">
+            <p><strong class="text-royal-navy">Residence:</strong> <span>Gondra's Residence, Karmanghat, Hyderabad, Telangana</span></p>
+            <p><strong class="text-royal-navy">Grand Reception:</strong> <span>Mandha Yadava Reddy Gardens, Champapet, Hyderabad</span></p>
+            <p><strong class="text-royal-navy">RSVP Contact:</strong> <a href="tel:+917013757859" class="text-royal-steel font-bold hover:underline">+91 70137 57859</a></p>
           </div>
         </div>
 
         <!-- Bride's Family Card (Pratapgarh) -->
-        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] relative overflow-hidden">
-          <div class="absolute top-0 right-0 bg-gold-rich text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
+        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#CBD5E1] relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-emerald-deep text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-wider">
             Bride's Family · Pratapgarh
           </div>
           
-          <h3 class="font-serif text-2xl font-bold text-royal-red mb-1">
+          <h3 class="font-serif text-2xl font-bold text-royal-navy mb-1">
             Ragani Yadav
           </h3>
-          <p class="text-sm font-semibold text-[#8A4B2B] mb-3">
+          <p class="text-sm font-semibold text-[#475569] mb-3">
             Daughter of Smt. Manju Devi &amp; Shri Ram Tirth Yadav
           </p>
 
-          <div class="space-y-1.5 text-xs text-[#6B4431] pt-3 border-t border-[#EFE2D3]">
-            <p><strong class="text-[#4A2616]">Granddaughter of:</strong> <span>Shri Udayraj Yadav</span></p>
-            <p><strong class="text-[#4A2616]">Native Residence:</strong> <span>Gram - Ramganj, Post - P.D. Chauraha, Tehsil - Patti, Pratapgarh, Uttar Pradesh</span></p>
+          <div class="space-y-1.5 text-xs text-[#334155] pt-3 border-t border-[#E2E8F0]">
+            <p><strong class="text-royal-navy">Granddaughter of:</strong> <span>Shri Udayraj Yadav</span></p>
+            <p><strong class="text-royal-navy">Native Residence:</strong> <span>Gram - Ramganj, Post - P.D. Chauraha, Tehsil - Patti, Pratapgarh, Uttar Pradesh</span></p>
           </div>
         </div>
 
       </div>
 
       <!-- Cordial Message from Groom's Side -->
-      <div class="mt-8 pt-6 border-t border-[#EADBCC]">
-        <p class="font-serif italic text-lg sm:text-xl text-royal-red">
+      <div class="mt-8 pt-6 border-t border-[#CBD5E1]">
+        <p class="font-serif italic text-lg sm:text-xl text-royal-navy">
           “We request the pleasure of your company with your family to grace the auspicious wedding celebrations and bless the newly married couple.”
         </p>
       </div>
@@ -497,10 +511,10 @@
       <span class="text-xs uppercase tracking-[0.25em] text-gold-rich font-bold block mb-1">
         Sacred Itinerary
       </span>
-      <h2 class="font-serif text-3xl sm:text-5xl text-royal-red font-bold">
+      <h2 class="font-serif text-3xl sm:text-5xl text-royal-navy font-bold">
         Celebration Schedule
       </h2>
-      <p class="text-xs sm:text-sm text-[#7D533E] mt-2 max-w-md mx-auto">
+      <p class="text-xs sm:text-sm text-[#475569] mt-2 max-w-md mx-auto">
         Explore all ceremony details, dates, venues, and map directions below.
       </p>
     </div>
@@ -509,13 +523,13 @@
     <div class="space-y-8" id="eventsList">
 
       <!-- EVENT 1: HALDHI (Hyderabad) -->
-      <article class="event-card event-hyderabad bg-white rounded-3xl overflow-hidden border border-[#E8DACB] shadow-sm hover:shadow-md transition-all">
+      <article class="event-card event-hyderabad bg-white rounded-3xl overflow-hidden border border-[#CBD5E1] shadow-sm hover:shadow-md transition-all">
         <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
           
           <div class="md:col-span-5 relative min-h-[220px] md:min-h-full bg-gradient-to-br from-[#FBBF24] to-[#D97706] overflow-hidden">
             <img src="assets/event-haldi.webp" alt="Haldhi Ceremony" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
-              <span class="inline-block px-3 py-1 rounded-full bg-[#B45309] text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
+              <span class="inline-block px-3 py-1 rounded-full bg-[#B45309] text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max shadow-sm">
                 👑 Hyderabad Leg
               </span>
               <h3 class="font-serif text-3xl font-bold">
@@ -529,34 +543,34 @@
 
           <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
             <div class="space-y-3">
-              <div class="flex items-center gap-2 text-royal-red font-bold text-lg sm:text-xl font-serif">
+              <div class="flex items-center gap-2 text-royal-navy font-bold text-lg sm:text-xl font-serif">
                 <span>🗓️</span>
                 <span>Friday, 20 November 2026 · 04:00 PM onwards</span>
               </div>
-              <div class="flex items-start gap-2 text-sm text-[#5C3A28]">
+              <div class="flex items-start gap-2 text-sm text-[#334155]">
                 <span>📍</span>
                 <div>
-                  <strong class="text-[#3A1E14]">Gondra's Residence</strong>
-                  <p class="text-xs text-[#7A5440]">Karmanghat, Hyderabad, Telangana</p>
+                  <strong class="text-royal-navy">Gondra's Residence</strong>
+                  <p class="text-xs text-[#64748B]">Karmanghat, Hyderabad, Telangana</p>
                 </div>
               </div>
 
               <div class="pt-2 flex items-center gap-2">
-                <span class="text-xs font-semibold text-[#8C5E4A]">Dress Code:</span>
+                <span class="text-xs font-semibold text-[#475569]">Dress Code:</span>
                 <div class="flex items-center gap-1.5">
                   <span class="w-4 h-4 rounded-full bg-[#EAB308] border border-white shadow-sm inline-block" title="Mustard Yellow"></span>
                   <span class="w-4 h-4 rounded-full bg-[#FEF08A] border border-[#EAB308]/40 shadow-sm inline-block" title="Haldi Yellow"></span>
-                  <span class="text-xs font-medium text-[#7A5440]">Sunlit Yellow &amp; Shades of Gold</span>
+                  <span class="text-xs font-medium text-[#475569]">Sunlit Yellow &amp; Shades of Gold</span>
                 </div>
               </div>
             </div>
 
-            <div class="mt-6 pt-4 border-t border-[#F0E5D8] flex flex-wrap items-center gap-2.5">
-              <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-[#FAF4EB] hover:bg-[#F3E5D4] text-royal-red text-xs font-semibold flex items-center gap-1.5 border border-[#E2CEBC]">
+            <div class="mt-6 pt-4 border-t border-[#E2E8F0] flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-[#F4F7FB] hover:bg-[#E2E8F0] text-royal-navy text-xs font-semibold flex items-center gap-1.5 border border-[#CBD5E1]">
                 <span>📍</span>
                 <span>View on Maps</span>
               </a>
-              <button onclick="addToCalendar('Haldhi Ceremony - Pranay & Ragani', '2026-11-20T16:00:00', '2026-11-20T19:00:00', 'Gondra\'s Residence, Karmanghat, Hyderabad')" class="px-4 py-2 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+              <button onclick="addToCalendar('Haldhi Ceremony - Pranay & Ragani', '2026-11-20T16:00:00', '2026-11-20T19:00:00', 'Gondra\'s Residence, Karmanghat, Hyderabad')" class="px-4 py-2 rounded-xl bg-gradient-to-r from-royal-midnight to-royal-navy hover:from-royal-navy hover:to-royal-steel text-gold-light text-xs font-semibold flex items-center gap-1.5 shadow-sm border border-gold/30">
                 <span>📅</span>
                 <span>Add to Calendar</span>
               </button>
@@ -567,14 +581,14 @@
       </article>
 
       <!-- EVENT 2: PELLIKODUKU (Hyderabad) -->
-      <article class="event-card event-hyderabad bg-white rounded-3xl overflow-hidden border border-[#E8DACB] shadow-sm hover:shadow-md transition-all">
+      <article class="event-card event-hyderabad bg-white rounded-3xl overflow-hidden border border-[#CBD5E1] shadow-sm hover:shadow-md transition-all">
         <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
           
           <div class="md:col-span-5 relative min-h-[220px] md:min-h-full bg-gradient-to-br from-[#FEF3C7] to-[#D97706] overflow-hidden">
             <img src="assets/event-pellikoduku.webp" alt="Pellikoduku Ceremony" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
-              <span class="inline-block px-3 py-1 rounded-full bg-emerald-deep text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
-                👑 Hyderabad Leg
+              <span class="inline-block px-3 py-1 rounded-full bg-emerald-deep text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max shadow-sm">
+                👑 Hyderabad Leg · Groom Ritual
               </span>
               <h3 class="font-serif text-3xl font-bold">
                 Pellikoduku Ceremony
@@ -587,34 +601,34 @@
 
           <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
             <div class="space-y-3">
-              <div class="flex items-center gap-2 text-royal-red font-bold text-lg sm:text-xl font-serif">
+              <div class="flex items-center gap-2 text-royal-navy font-bold text-lg sm:text-xl font-serif">
                 <span>🗓️</span>
                 <span>20 – 23 November 2026 · 07:00 PM onwards</span>
               </div>
-              <div class="flex items-start gap-2 text-sm text-[#5C3A28]">
+              <div class="flex items-start gap-2 text-sm text-[#334155]">
                 <span>📍</span>
                 <div>
-                  <strong class="text-[#3A1E14]">Gondra's Residence</strong>
-                  <p class="text-xs text-[#7A5440]">Karmanghat, Hyderabad, Telangana</p>
+                  <strong class="text-royal-navy">Gondra's Residence</strong>
+                  <p class="text-xs text-[#64748B]">Karmanghat, Hyderabad, Telangana</p>
                 </div>
               </div>
 
               <div class="pt-2 flex items-center gap-2">
-                <span class="text-xs font-semibold text-[#8C5E4A]">Dress Code:</span>
+                <span class="text-xs font-semibold text-[#475569]">Dress Code:</span>
                 <div class="flex items-center gap-1.5">
                   <span class="w-4 h-4 rounded-full bg-[#B45309] border border-white shadow-sm inline-block" title="Pattu Gold"></span>
                   <span class="w-4 h-4 rounded-full bg-[#FAF4EB] border border-[#B45309]/40 shadow-sm inline-block" title="Silk Cream"></span>
-                  <span class="text-xs font-medium text-[#7A5440]">Traditional South Indian Silk &amp; Pattu</span>
+                  <span class="text-xs font-medium text-[#475569]">Traditional South Indian Silk &amp; Pattu</span>
                 </div>
               </div>
             </div>
 
-            <div class="mt-6 pt-4 border-t border-[#F0E5D8] flex flex-wrap items-center gap-2.5">
-              <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-[#FAF4EB] hover:bg-[#F3E5D4] text-royal-red text-xs font-semibold flex items-center gap-1.5 border border-[#E2CEBC]">
+            <div class="mt-6 pt-4 border-t border-[#E2E8F0] flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-[#F4F7FB] hover:bg-[#E2E8F0] text-royal-navy text-xs font-semibold flex items-center gap-1.5 border border-[#CBD5E1]">
                 <span>📍</span>
                 <span>View on Maps</span>
               </a>
-              <button onclick="addToCalendar('Pellikoduku Ceremony - Pranay & Ragani', '2026-11-20T19:00:00', '2026-11-23T22:00:00', 'Gondra\'s Residence, Karmanghat, Hyderabad')" class="px-4 py-2 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+              <button onclick="addToCalendar('Pellikoduku Ceremony - Pranay & Ragani', '2026-11-20T19:00:00', '2026-11-23T22:00:00', 'Gondra\'s Residence, Karmanghat, Hyderabad')" class="px-4 py-2 rounded-xl bg-gradient-to-r from-royal-midnight to-royal-navy hover:from-royal-navy hover:to-royal-steel text-gold-light text-xs font-semibold flex items-center gap-1.5 shadow-sm border border-gold/30">
                 <span>📅</span>
                 <span>Add to Calendar</span>
               </button>
@@ -624,15 +638,15 @@
         </div>
       </article>
 
-      <!-- EVENT 3: WEDDING (Pratapgarh) -->
-      <article class="event-card event-pratapgarh bg-gradient-to-br from-[#4A080E] via-[#5C0A12] to-[#2D0408] rounded-3xl overflow-hidden border-2 border-gold shadow-lg text-silk-ivory">
+      <!-- EVENT 3: WEDDING (Pratapgarh - Imperial Midnight Velvet & Pure Gold Theme) -->
+      <article class="event-card event-pratapgarh bg-gradient-to-br from-[#071126] via-[#0A1931] to-[#040B17] rounded-3xl overflow-hidden border-2 border-gold shadow-xl text-silk-ivory">
         <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
           
           <div class="md:col-span-5 relative min-h-[260px] md:min-h-full overflow-hidden">
             <img src="assets/event-vivah.webp" alt="Wedding Ceremony" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6">
-              <span class="inline-block px-3 py-1 rounded-full bg-gold text-royal-deep text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
-                ✦ Main Wedding Night ✦
+              <span class="inline-block px-3 py-1 rounded-full bg-gold text-royal-midnight text-[11px] font-bold tracking-wider uppercase mb-1 w-max shadow-md">
+                ✦ Main Wedding Night · Baarat Swagat ✦
               </span>
               <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-light">
                 Shubh Vivah &amp; Baarat
@@ -668,7 +682,7 @@
               <div class="flex items-center gap-2 pt-1">
                 <span class="text-xs font-semibold text-gold">Dress Code:</span>
                 <div class="flex items-center gap-1.5">
-                  <span class="w-4 h-4 rounded-full bg-[#800000] border border-white shadow-sm inline-block" title="Royal Maroon"></span>
+                  <span class="w-4 h-4 rounded-full bg-[#13274F] border border-white shadow-sm inline-block" title="Imperial Sapphire"></span>
                   <span class="w-4 h-4 rounded-full bg-[#D4AF37] border border-white shadow-sm inline-block" title="Gold"></span>
                   <span class="text-xs font-medium text-silk-cream">Royal Traditional &amp; Ethnic Elegance</span>
                 </div>
@@ -676,7 +690,7 @@
             </div>
 
             <div class="mt-6 pt-4 border-t border-gold/30 flex flex-wrap items-center gap-2.5">
-              <a href="https://maps.app.goo.gl/ycjgwUhRdUrrmtzw8" target="_blank" class="px-4 py-2 rounded-xl bg-gold hover:bg-gold-light text-royal-deep text-xs font-bold flex items-center gap-1.5 shadow-md">
+              <a href="https://maps.app.goo.gl/ycjgwUhRdUrrmtzw8" target="_blank" class="px-4 py-2 rounded-xl bg-gold hover:bg-gold-light text-royal-midnight text-xs font-bold flex items-center gap-1.5 shadow-md">
                 <span>📍</span>
                 <span>Get Directions to Vivah Venue</span>
               </a>
@@ -691,14 +705,14 @@
       </article>
 
       <!-- EVENT 4: SRI SATYANARAYANA VRATHAM (Hyderabad) -->
-      <article class="event-card event-hyderabad bg-white rounded-3xl overflow-hidden border border-[#E8DACB] shadow-sm hover:shadow-md transition-all">
+      <article class="event-card event-hyderabad bg-white rounded-3xl overflow-hidden border border-[#CBD5E1] shadow-sm hover:shadow-md transition-all">
         <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
           
           <div class="md:col-span-5 relative min-h-[220px] md:min-h-full bg-gradient-to-br from-[#FEF3C7] to-[#F59E0B] overflow-hidden">
             <img src="assets/event-vratham.webp" alt="Sri Satyanarayana Vratham" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 text-white">
-              <span class="inline-block px-3 py-1 rounded-full bg-gold-dark text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
-                👑 Hyderabad Leg
+              <span class="inline-block px-3 py-1 rounded-full bg-gold-dark text-white text-[11px] font-bold tracking-wider uppercase mb-1 w-max shadow-sm">
+                👑 Hyderabad Leg · Auspicious Puja
               </span>
               <h3 class="font-serif text-3xl font-bold">
                 Sri Satyanarayana Vratham
@@ -711,34 +725,34 @@
 
           <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
             <div class="space-y-3">
-              <div class="flex items-center gap-2 text-royal-red font-bold text-lg sm:text-xl font-serif">
+              <div class="flex items-center gap-2 text-royal-navy font-bold text-lg sm:text-xl font-serif">
                 <span>🗓️</span>
                 <span>Monday, 30 November 2026 · 11:00 AM onwards</span>
               </div>
-              <div class="flex items-start gap-2 text-sm text-[#5C3A28]">
+              <div class="flex items-start gap-2 text-sm text-[#334155]">
                 <span>📍</span>
                 <div>
-                  <strong class="text-[#3A1E14]">Gondra's Residence</strong>
-                  <p class="text-xs text-[#7A5440]">Karmanghat, Hyderabad, Telangana</p>
+                  <strong class="text-royal-navy">Gondra's Residence</strong>
+                  <p class="text-xs text-[#64748B]">Karmanghat, Hyderabad, Telangana</p>
                 </div>
               </div>
 
               <div class="pt-2 flex items-center gap-2">
-                <span class="text-xs font-semibold text-[#8C5E4A]">Dress Code:</span>
+                <span class="text-xs font-semibold text-[#475569]">Dress Code:</span>
                 <div class="flex items-center gap-1.5">
                   <span class="w-4 h-4 rounded-full bg-[#D97706] border border-white shadow-sm inline-block" title="Festive Saffron"></span>
                   <span class="w-4 h-4 rounded-full bg-[#FFFBEB] border border-[#D97706]/40 shadow-sm inline-block" title="Silk White"></span>
-                  <span class="text-xs font-medium text-[#7A5440]">Traditional Puja Attire &amp; Saffron</span>
+                  <span class="text-xs font-medium text-[#475569]">Traditional Puja Attire &amp; Saffron</span>
                 </div>
               </div>
             </div>
 
-            <div class="mt-6 pt-4 border-t border-[#F0E5D8] flex flex-wrap items-center gap-2.5">
-              <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-[#FAF4EB] hover:bg-[#F3E5D4] text-royal-red text-xs font-semibold flex items-center gap-1.5 border border-[#E2CEBC]">
+            <div class="mt-6 pt-4 border-t border-[#E2E8F0] flex flex-wrap items-center gap-2.5">
+              <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-[#F4F7FB] hover:bg-[#E2E8F0] text-royal-navy text-xs font-semibold flex items-center gap-1.5 border border-[#CBD5E1]">
                 <span>📍</span>
                 <span>View on Maps</span>
               </a>
-              <button onclick="addToCalendar('Sri Satyanarayana Vratham - Pranay & Ragani', '2026-11-30T11:00:00', '2026-11-30T14:00:00', 'Gondra\'s Residence, Karmanghat, Hyderabad')" class="px-4 py-2 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm">
+              <button onclick="addToCalendar('Sri Satyanarayana Vratham - Pranay & Ragani', '2026-11-30T11:00:00', '2026-11-30T14:00:00', 'Gondra\'s Residence, Karmanghat, Hyderabad')" class="px-4 py-2 rounded-xl bg-gradient-to-r from-royal-midnight to-royal-navy hover:from-royal-navy hover:to-royal-steel text-gold-light text-xs font-semibold flex items-center gap-1.5 shadow-sm border border-gold/30">
                 <span>📅</span>
                 <span>Add to Calendar</span>
               </button>
@@ -748,21 +762,21 @@
         </div>
       </article>
 
-      <!-- EVENT 5: HYDERABAD GRAND RECEPTION (FEATURED GALA EVENT) -->
-      <article class="event-card event-hyderabad bg-gradient-to-br from-[#1A0924] via-[#360E36] to-[#0F0314] rounded-3xl overflow-hidden border-2 border-gold shadow-2xl text-silk-ivory">
+      <!-- EVENT 5: HYDERABAD GRAND RECEPTION (FEATURED GALA EVENT - Imperial Sapphire & 24K Gold) -->
+      <article class="event-card event-hyderabad bg-gradient-to-br from-[#040B17] via-[#0A1931] to-[#13274F] rounded-3xl overflow-hidden border-2 border-gold shadow-2xl text-silk-ivory">
         <div class="grid grid-cols-1 md:grid-cols-12 items-stretch">
           
           <div class="md:col-span-5 relative min-h-[280px] md:min-h-full overflow-hidden">
             <img src="assets/event-reception.webp" alt="Reception Banquet & Gala" class="w-full h-full object-cover object-center filter brightness-[0.95]" loading="lazy">
             <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6">
-              <span class="inline-block px-3 py-1 rounded-full bg-gold text-royal-deep text-[11px] font-bold tracking-wider uppercase mb-1 w-max">
-                👑 Groom's Grand Reception 👑
+              <span class="inline-block px-3 py-1 rounded-full bg-gold text-royal-midnight text-[11px] font-bold tracking-wider uppercase mb-1 w-max shadow-md">
+                👑 Groom's Grand Reception Gala 👑
               </span>
               <h3 class="font-serif text-3xl sm:text-4xl font-bold text-gold-light">
                 Grand Reception
               </h3>
               <p class="font-serif italic text-xs text-amber-200 mt-1">
-                “Hosted by Shri Gondra Naresh Yadav &amp; Smt. Padmavati”
+                “Hosted with warm compliments by Shri Gondra Naresh Yadav &amp; Smt. Padmavati”
               </p>
             </div>
           </div>
@@ -776,7 +790,7 @@
                   Wednesday, 02 December 2026
                 </h4>
                 <p class="text-xs text-amber-100 font-medium mt-1">
-                  Evening 07:00 PM onwards · Banquet, Live Music &amp; Dinner
+                  Evening 07:00 PM onwards · Banquet, Live Music &amp; Grand Dinner
                 </p>
               </div>
 
@@ -793,7 +807,7 @@
               <div class="flex items-center gap-2 pt-1">
                 <span class="text-xs font-semibold text-gold">Dress Code:</span>
                 <div class="flex items-center gap-1.5">
-                  <span class="w-4 h-4 rounded-full bg-[#520F3E] border border-white shadow-sm inline-block" title="Royal Plum"></span>
+                  <span class="w-4 h-4 rounded-full bg-[#0A1931] border border-white shadow-sm inline-block" title="Imperial Navy"></span>
                   <span class="w-4 h-4 rounded-full bg-[#FCD34D] border border-white shadow-sm inline-block" title="Champagne Gold"></span>
                   <span class="text-xs font-medium text-silk-cream">Festive Glam &amp; Royal Splendour</span>
                 </div>
@@ -802,7 +816,7 @@
             </div>
 
             <div class="mt-6 pt-4 border-t border-gold/30 flex flex-wrap items-center gap-2.5">
-              <a href="https://maps.google.com/?q=Manda+Yadava+Reddy+Gardens,+Champapet,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-gold hover:bg-gold-light text-royal-deep text-xs font-bold flex items-center gap-1.5 shadow-md">
+              <a href="https://maps.google.com/?q=Manda+Yadava+Reddy+Gardens,+Champapet,+Hyderabad,+Telangana" target="_blank" class="px-4 py-2 rounded-xl bg-gold hover:bg-gold-light text-royal-midnight text-xs font-bold flex items-center gap-1.5 shadow-md">
                 <span>📍</span>
                 <span>Open Hyderabad Venue Map</span>
               </a>
@@ -823,13 +837,13 @@
 
   <!-- VENUES & TRAVEL GUIDE -->
   <section class="max-w-4xl mx-auto px-4 py-8">
-    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-[#EADBCC]">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-[#CBD5E1]">
       
       <div class="text-center mb-8">
         <span class="text-xs uppercase tracking-[0.25em] text-gold-rich font-bold block mb-1">
           Locations &amp; Directions
         </span>
-        <h2 class="font-serif text-3xl sm:text-4xl text-royal-red font-bold">
+        <h2 class="font-serif text-3xl sm:text-4xl text-royal-navy font-bold">
           Venue Details &amp; Maps
         </h2>
       </div>
@@ -837,25 +851,25 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Venue 1: Gondra's Residence (Hyderabad) -->
-        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] flex flex-col justify-between">
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-xl">🏡</span>
-              <span class="text-xs font-bold text-emerald-deep uppercase tracking-wider">Hyderabad Residence</span>
+              <span class="text-xs font-bold text-royal-navy uppercase tracking-wider">Hyderabad Residence</span>
             </div>
-            <h3 class="font-serif text-xl font-bold text-[#3A1E14] mb-1">
+            <h3 class="font-serif text-xl font-bold text-royal-navy mb-1">
               Gondra's Residence
             </h3>
-            <p class="text-xs text-[#7A5440] mb-3">
+            <p class="text-xs text-[#64748B] mb-3">
               Karmanghat, Hyderabad, Telangana
             </p>
-            <p class="text-xs text-[#6B4431] bg-white p-3 rounded-xl border border-[#E8DACB]">
+            <p class="text-xs text-[#334155] bg-white p-3 rounded-xl border border-[#E2E8F0]">
               Hosts Haldhi (20 Nov), Pellikoduku (20-23 Nov), and Sri Satyanarayana Vratham (30 Nov).
             </p>
           </div>
 
           <div class="mt-5">
-            <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-deep hover:bg-emerald-soft text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all">
+            <a href="https://maps.google.com/?q=Karmanghat,+Hyderabad,+Telangana" target="_blank" class="w-full py-2.5 rounded-xl bg-royal-navy hover:bg-royal-steel text-gold-light text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all border border-gold/30">
               <span>📍</span>
               <span>Navigate to Residence</span>
             </a>
@@ -863,25 +877,25 @@
         </div>
 
         <!-- Venue 2: Mandha Yadava Reddy Gardens (Hyderabad) -->
-        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] flex flex-col justify-between">
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-xl">🏛️</span>
-              <span class="text-xs font-bold text-emerald-deep uppercase tracking-wider">Hyderabad Reception</span>
+              <span class="text-xs font-bold text-royal-navy uppercase tracking-wider">Hyderabad Reception</span>
             </div>
-            <h3 class="font-serif text-xl font-bold text-[#3A1E14] mb-1">
+            <h3 class="font-serif text-xl font-bold text-royal-navy mb-1">
               Mandha Yadava Reddy Gardens
             </h3>
-            <p class="text-xs text-[#7A5440] mb-3">
+            <p class="text-xs text-[#64748B] mb-3">
               Champapet, Hyderabad, Telangana
             </p>
-            <p class="text-xs text-[#6B4431] bg-white p-3 rounded-xl border border-[#E8DACB]">
+            <p class="text-xs text-[#334155] bg-white p-3 rounded-xl border border-[#E2E8F0]">
               The Grand Reception Banquet, dining, and music celebration on Wednesday, 02 December 2026.
             </p>
           </div>
 
           <div class="mt-5">
-            <a href="https://maps.google.com/?q=Manda+Yadava+Reddy+Gardens,+Champapet,+Hyderabad,+Telangana" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-deep hover:bg-emerald-soft text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all">
+            <a href="https://maps.google.com/?q=Manda+Yadava+Reddy+Gardens,+Champapet,+Hyderabad,+Telangana" target="_blank" class="w-full py-2.5 rounded-xl bg-royal-navy hover:bg-royal-steel text-gold-light text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all border border-gold/30">
               <span>📍</span>
               <span>Navigate to Reception</span>
             </a>
@@ -889,25 +903,25 @@
         </div>
 
         <!-- Venue 3: Satyanarayan Marriage Lawn (Pratapgarh, UP) -->
-        <div class="p-6 rounded-2xl bg-[#FCFAF6] border border-[#EFE2D3] flex flex-col justify-between">
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-2 mb-2">
               <span class="text-xl">🛕</span>
-              <span class="text-xs font-bold text-royal-red uppercase tracking-wider">Pratapgarh Wedding</span>
+              <span class="text-xs font-bold text-emerald-deep uppercase tracking-wider">Pratapgarh Wedding</span>
             </div>
-            <h3 class="font-serif text-xl font-bold text-[#3A1E14] mb-1">
+            <h3 class="font-serif text-xl font-bold text-royal-navy mb-1">
               Satyanarayan Marriage Lawn
             </h3>
-            <p class="text-xs text-[#7A5440] mb-3">
+            <p class="text-xs text-[#64748B] mb-3">
               Ramganj, Tehsil - Patti, Pratapgarh, U.P.
             </p>
-            <p class="text-xs text-[#6B4431] bg-white p-3 rounded-xl border border-[#E8DACB]">
+            <p class="text-xs text-[#334155] bg-white p-3 rounded-xl border border-[#E2E8F0]">
               Hosts the Sacred Wedding (Shubh Vivah &amp; Baarat Swagat) on 25 – 26 November 2026.
             </p>
           </div>
 
           <div class="mt-5">
-            <a href="https://maps.app.goo.gl/ycjgwUhRdUrrmtzw8" target="_blank" class="w-full py-2.5 rounded-xl bg-royal-red hover:bg-royal-maroon text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all">
+            <a href="https://maps.app.goo.gl/ycjgwUhRdUrrmtzw8" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-deep hover:bg-emerald-soft text-white text-xs font-semibold flex items-center justify-center gap-2 shadow-sm transition-all border border-gold/30">
               <span>📍</span>
               <span>Navigate to Vivah Venue</span>
             </a>
@@ -922,32 +936,32 @@
 
   <!-- WHATSAPP BLESSINGS & GUEST WISHES (Groom-Side Focused) -->
   <section id="wishesSection" class="max-w-4xl mx-auto px-4 py-10">
-    <div class="bg-gradient-to-br from-[#FFFBF5] via-[#FAF4EB] to-[#F5ECE0] rounded-3xl p-6 sm:p-10 border border-gold/30 shadow-md text-center">
+    <div class="bg-gradient-to-br from-[#FFFFFF] via-[#F8FAFC] to-[#EDF2F9] rounded-3xl p-6 sm:p-10 border border-gold/35 shadow-md text-center">
       
       <span class="text-2xl mb-1 inline-block">💌</span>
-      <h2 class="font-serif text-3xl sm:text-4xl text-royal-red font-bold">
+      <h2 class="font-serif text-3xl sm:text-4xl text-royal-navy font-bold">
         Shower Your Heartfelt Blessings
       </h2>
-      <p class="text-xs sm:text-sm text-[#7D533E] mt-2 max-w-md mx-auto mb-6">
+      <p class="text-xs sm:text-sm text-[#475569] mt-2 max-w-md mx-auto mb-6">
         Tap any message below or write your personal blessing to send directly via WhatsApp!
       </p>
 
       <!-- Pre-written Wish Chips -->
       <div class="flex flex-wrap items-center justify-center gap-2 max-w-2xl mx-auto mb-6">
-        <button onclick="setCustomWish('Heartiest congratulations to Pranay, Ragani, and the Gondra family! Looking forward to celebrating in Hyderabad! 🎉🪷')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/40 border border-gold/30 text-xs font-medium text-[#4A2616] transition-all text-left">
+        <button onclick="setCustomWish('Heartiest congratulations to Pranay, Ragani, and the Gondra family! Looking forward to celebrating in Hyderabad! 🎉👑')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/30 border border-gold/30 text-xs font-medium text-royal-navy transition-all text-left shadow-sm">
           🎉 "Can't wait to celebrate in Hyderabad..."
         </button>
-        <button onclick="setCustomWish('Wishing dearest Pranay and Ragani a lifetime of boundless love, happiness, and prosperity! 💐✨')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/40 border border-gold/30 text-xs font-medium text-[#4A2616] transition-all text-left">
+        <button onclick="setCustomWish('Wishing dearest Pranay and Ragani a lifetime of boundless love, happiness, and prosperity! 💐✨')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/30 border border-gold/30 text-xs font-medium text-royal-navy transition-all text-left shadow-sm">
           💐 "Wishing a lifetime of love & happiness..."
         </button>
-        <button onclick="setCustomWish('May Lord Satyanarayana shower His divine blessings upon Pranay and Ragani on their wedding! 🪔✨')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/40 border border-gold/30 text-xs font-medium text-[#4A2616] transition-all text-left">
+        <button onclick="setCustomWish('May Lord Satyanarayana shower His divine blessings upon Pranay and Ragani on their wedding! 🪔✨')" class="px-3.5 py-2 rounded-xl bg-white hover:bg-gold-light/30 border border-gold/30 text-xs font-medium text-royal-navy transition-all text-left shadow-sm">
           🪔 "Warmest blessings for a blissful married life..."
         </button>
       </div>
 
       <!-- Message Textarea -->
       <div class="max-w-md mx-auto space-y-3">
-        <textarea id="wishInput" rows="3" class="w-full p-3.5 rounded-2xl bg-white border border-[#E8DACB] text-xs sm:text-sm focus:outline-none focus:border-royal-red text-[#3A1E14]" placeholder="Type your personal message or blessing here..."></textarea>
+        <textarea id="wishInput" rows="3" class="w-full p-3.5 rounded-2xl bg-white border border-[#CBD5E1] text-xs sm:text-sm focus:outline-none focus:border-royal-navy text-[#0F172A] shadow-inner" placeholder="Type your personal message or blessing here..."></textarea>
         
         <!-- Dual WhatsApp Blessing Buttons -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
@@ -975,11 +989,11 @@
   </section>
 
 
-  <!-- FOOTER -->
-  <footer class="bg-[#2A150D] text-silk-ivory py-12 px-4 text-center border-t border-gold/30">
+  <!-- FOOTER (Imperial Midnight Navy & Gold) -->
+  <footer class="bg-[#071126] text-silk-ivory py-12 px-4 text-center border-t border-gold/30">
     <div class="max-w-2xl mx-auto space-y-4">
       
-      <div class="text-3xl text-gold">🪷</div>
+      <div class="text-3xl text-gold">👑</div>
 
       <h3 class="font-serif text-3xl sm:text-4xl font-bold gold-text-sheen">
         Pranay &amp; Ragani
@@ -989,19 +1003,24 @@
         Hyderabad · Pratapgarh · 2026
       </p>
 
-      <p class="text-xs text-silk-cream/70 max-w-md mx-auto leading-relaxed pt-2">
+      <p class="text-xs text-silk-cream/80 max-w-md mx-auto leading-relaxed pt-2">
         With Heartfelt Compliments &amp; Warm Regards:  
-        <br><strong class="text-gold-light font-serif text-sm">Shri Gondra Naresh Yadav &amp; Smt. Padmavati</strong>  
+        <br><strong class="text-gold-light font-serif text-base">Shri Gondra Naresh Yadav &amp; Smt. Padmavati</strong>  
         <br>The Gondra Family · Hyderabad  
-        <br>RSVP: Gondra Pranay Chandra Yadav (+91 70137 57859)
+        <br>RSVP: Gondra Pranay Chandra Yadav (<a href="tel:+917013757859" class="text-gold-light underline">+91 70137 57859</a>)
       </p>
 
-      <div class="pt-6 border-t border-white/10 text-[11px] text-silk-cream/50">
+      <div class="pt-6 border-t border-white/10 text-[11px] text-silk-cream/60">
         <span>Crafted with love &amp; blessings · The Gondra Family</span>
       </div>
 
     </div>
   </footer>
+
+  <!-- FLOATING MUSIC TOGGLE BUTTON -->
+  <button id="musicToggleBtn" onclick="toggleMusic()" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-gradient-to-br from-[#071126] via-[#0A1931] to-[#13274F] border-2 border-gold text-gold shadow-[0_4px_20px_rgba(7,17,38,0.5)] flex items-center justify-center hover:scale-110 active:scale-95 transition-all" title="Toggle Wedding Music">
+    <span id="musicIcon" class="text-lg">🎵</span>
+  </button>
 
 
   <!-- JAVASCRIPT -->
@@ -1159,23 +1178,23 @@
       const input = document.getElementById('wishInput');
       let msg = input.value.trim();
       if (!msg) {
-        msg = 'Heartiest congratulations to Pranay, Ragani, and the entire Gondra family on this sacred celebration! 🪷💐';
+        msg = 'Heartiest congratulations to Pranay, Ragani, and the entire Gondra family on this sacred celebration! 👑💐';
       }
       const phone = (recipient === 'bride') ? '918317515367' : '917013757859';
       const encoded = encodeURIComponent(msg);
       window.open(`https://wa.me/${phone}?text=${encoded}`, '_blank');
     }
 
-    // 6. FLOATING ROSE & MARIGOLD PETAL SHOWER
+    // 6. FLOATING MARIGOLD, MOGRA & GOLD CONFETTI SHOWER
     function initPetals() {
       const container = document.getElementById('petalContainer');
       const petalTypes = [
-        { color: '#F59E0B', size: 18, delay: 0, duration: 12 },
-        { color: '#E11D48', size: 20, delay: 2, duration: 15 },
-        { color: '#FBBF24', size: 16, delay: 4, duration: 14 },
-        { color: '#BE123C', size: 22, delay: 6, duration: 16 },
-        { color: '#F59E0B', size: 15, delay: 8, duration: 13 },
-        { color: '#E11D48', size: 19, delay: 10, duration: 17 }
+        { color: '#F59E0B', size: 18, delay: 0, duration: 12 }, // Amber Marigold
+        { color: '#D97706', size: 20, delay: 2, duration: 15 }, // Deep Gold Marigold
+        { color: '#FFFFFF', size: 16, delay: 3, duration: 14 }, // Mogra / Jasmine
+        { color: '#FBBF24', size: 21, delay: 5, duration: 16 }, // Saffron Gold
+        { color: '#D4AF37', size: 14, delay: 7, duration: 13 }, // 24K Gold Confetti
+        { color: '#FEF08A', size: 17, delay: 9, duration: 17 }  // Pale Champagne
       ];
 
       petalTypes.forEach((p, idx) => {
@@ -1190,7 +1209,7 @@
         inner.style.animationDuration = '3.5s';
 
         inner.innerHTML = `
-          <svg width="${p.size}" height="${p.size * 1.3}" viewBox="0 0 24 32" fill="${p.color}" opacity="0.75" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">
+          <svg width="${p.size}" height="${p.size * 1.3}" viewBox="0 0 24 32" fill="${p.color}" opacity="0.8" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));">
             <path d="M12 0C16 7 24 14 24 22C24 27.5 18.6 32 12 32C5.4 32 0 27.5 0 22C0 14 8 7 12 0Z"/>
           </svg>
         `;
@@ -1209,9 +1228,32 @@
       if (playPromise !== undefined) {
         playPromise.then(() => {
           isMusicPlaying = true;
+          updateMusicButtonIcon();
         }).catch(err => {
           console.log('Audio autoplay prevented, will start on next interaction:', err);
         });
+      }
+    }
+
+    function toggleMusic() {
+      const audio = document.getElementById('weddingAudio');
+      if (!audio) return;
+      if (audio.paused) {
+        audio.play().then(() => {
+          isMusicPlaying = true;
+          updateMusicButtonIcon();
+        }).catch(() => {});
+      } else {
+        audio.pause();
+        isMusicPlaying = false;
+        updateMusicButtonIcon();
+      }
+    }
+
+    function updateMusicButtonIcon() {
+      const icon = document.getElementById('musicIcon');
+      if (icon) {
+        icon.textContent = isMusicPlaying ? '🔊' : '🔈';
       }
     }
 
@@ -1263,7 +1305,10 @@
         const audio = document.getElementById('weddingAudio');
         if (audio && audio.paused && hasDoorOpened) {
           audio.volume = 0.85;
-          audio.play().catch(() => {});
+          audio.play().then(() => {
+            isMusicPlaying = true;
+            updateMusicButtonIcon();
+          }).catch(() => {});
         }
       }, { passive: true });
     });
